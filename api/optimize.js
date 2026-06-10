@@ -11,8 +11,8 @@ export default async function handler(req, res) {
             return res.status(400).json({ error: 'Both job description and resume bullets are required' });
         }
 
-        const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-        if (!GEMINI_API_KEY) {
+        const GEMINI_API__KEY = process.env.GEMINI_API__KEY;
+        if (!GEMINI_API__KEY) {
             return res.status(500).json({ 
                 error: 'Server configuration error: Missing GEMINI_API_KEY in Vercel Environment Variables' 
             });
