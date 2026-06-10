@@ -40,7 +40,7 @@ Analyze and return a professional markdown response with these exact sections:
 Be specific, professional, and results-focused.`;
 
         const geminiRes = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API__KEY}`,
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
